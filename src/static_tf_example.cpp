@@ -30,8 +30,9 @@ int main(int argc, char **argv)
     static_broadcaster.sendTransform(static_transformStamped[i]);
   }
 
-  ROS_INFO(" All TFs published");
+  ros::spin();
 
+  ROS_INFO(" All TFs published");
   return 0;
 }
 
